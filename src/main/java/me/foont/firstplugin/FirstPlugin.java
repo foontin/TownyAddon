@@ -17,7 +17,7 @@ public final class FirstPlugin extends JavaPlugin {
     public static IntegerDataField Barracks = new IntegerDataField(keyname, defaultVal, label);
 
     @Override
-    public void onEnable() {
+    public void onLoad() {
         // Plugin startup logic
         try {
             TownyAPI.getInstance().registerCustomDataField(Barracks);
